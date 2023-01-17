@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Market Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="header-top">
+          <div class="logo-container">
+            <div class="logo-icon">D</div>
+            DIGIART
+          </div>
+          <div class="menu-container">
+            <i class="fas fa-bell"></i>
+            <img
+              src="https://assets.codepen.io/3685267/nft-dashboard-pro-1.jpg"
+              alt=""
+            />
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="menu-list-icon round-border">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search-box round-border">
+            <input placeholder="Search for NFTs" type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="side-bar">
+          <div class="menu-list">
+            <div class="side-bar__menu-row">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Market</span>
+            </div>
+
+            <div class="side-bar__menu-row active">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </div>
+
+            <div class="side-bar__menu-row">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-heart"></i>
+              <span>Favorites</span>
+            </div>
+
+            <div class="side-bar__menu-row">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <span>Trending</span>
+            </div>
+
+            <div class="side-bar__menu-row">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-image"></i>
+              <span>Collection</span>
+            </div>
+
+            <div class="side-bar__menu-row">
+              <div class="active-marker"></div>
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Wallet</span>
+            </div>
+          </div>
+        </section>
+        <section class="dashboard">
+          <h2>Dashboard</h2>
+          <p>Buy and sell digital artwork, NFT collection</p>
+          <div class="dashboard__header-image round-border">
+            <h1>Find a collection of best artwork here</h1>
+            <button class="gradient-btn">Explore Now</button>
+          </div>
+
+          <h3>Trending Artworks</h3>
+          <ul class="choice-list">
+            <li>Art</li>
+            <li>Collectables</li>
+            <li>Music</li>
+            <li>Sport</li>
+          </ul>
+          <div class="trending-list">
+            <div class="trending-card round-border">
+              <div class="trending-card__image-holder image-1">
+                <div class="trending-card__glass-board round-border">
+                  <ul>
+                    <li>Current Bid</li>
+                    <li>3.8 ETH</li>
+                  </ul>
+                  <ul>
+                    <li>Ending Bid</li>
+                    <li>22h: 44m: 6s</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="trending-card__seller-info">
+                <h4>People Abstract Painting</h4>
+                <div class="trending-card__avatar-holder">
+                  <img
+                    src="https://assets.codepen.io/3685267/nft-dashboard-pro-5.jpg"
+                    alt=""
+                  />
+                  <span>@raphael</span>
+                </div>
+
+                <div class="trending-card__btn-group">
+                  <button>Place a bid</button>
+                  <button><span>View artwork</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-card round-border">
+              <div class="trending-card__image-holder">
+                <div class="trending-card__glass-board round-border">
+                  <ul>
+                    <li>Current Bid</li>
+                    <li>3.8 ETH</li>
+                  </ul>
+                  <ul>
+                    <li>Ending Bid</li>
+                    <li>22h: 44m: 6s</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="trending-card__seller-info">
+                <h4>Abstract Art Painting</h4>
+                <div class="trending-card__avatar-holder">
+                  <img
+                    src="https://assets.codepen.io/3685267/nft-dashboard-pro-4.jpg"
+                    alt=""
+                  />
+                  <span>@colin</span>
+                </div>
+
+                <div class="trending-card__btn-group">
+                  <button>Place a bid</button>
+                  <button><span>View artwork</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-card round-border">
+              <div class="trending-card__image-holder">
+                <div class="trending-card__glass-board round-border">
+                  <ul>
+                    <li>Current Bid</li>
+                    <li>3.8 ETH</li>
+                  </ul>
+                  <ul>
+                    <li>Ending Bid</li>
+                    <li>22h: 44m: 6s</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="trending-card__seller-info">
+                <h4>Purple Liquid Painting</h4>
+                <div class="trending-card__avatar-holder">
+                  <img
+                    src="https://assets.codepen.io/3685267/nft-dashboard-pro-1.jpg"
+                    alt=""
+                  />
+                  <span>@raven</span>
+                </div>
+
+                <div class="trending-card__btn-group">
+                  <button>Place a bid</button>
+                  <button><span>View artwork</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-card round-border">
+              <div class="trending-card__image-holder">
+                <div class="trending-card__glass-board round-border">
+                  <ul>
+                    <li>Current Bid</li>
+                    <li>3.8 ETH</li>
+                  </ul>
+                  <ul>
+                    <li>Ending Bid</li>
+                    <li>22h: 44m: 6s</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="trending-card__seller-info">
+                <h4>Generative Art</h4>
+                <div class="trending-card__avatar-holder">
+                  <img
+                    src="https://assets.codepen.io/3685267/nft-dashboard-pro-3.jpg"
+                    alt=""
+                  />
+                  <span>@emely</span>
+                </div>
+
+                <div class="trending-card__btn-group">
+                  <button>Place a bid</button>
+                  <button><span>View artwork</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trending-card round-border">
+              <div class="trending-card__image-holder">
+                <div class="trending-card__glass-board round-border">
+                  <ul>
+                    <li>Current Bid</li>
+                    <li>3.8 ETH</li>
+                  </ul>
+                  <ul>
+                    <li>Ending Bid</li>
+                    <li>22h: 44m: 6s</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="trending-card__seller-info">
+                <h4>Liquid Base Painting</h4>
+                <div class="trending-card__avatar-holder">
+                  <img
+                    src="https://assets.codepen.io/3685267/nft-dashboard-pro-4.jpg"
+                    alt=""
+                  />
+                  <span>@colin</span>
+                </div>
+
+                <div class="trending-card__btn-group">
+                  <button>Place a bid</button>
+                  <button><span>View artwork</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom">
+          <h3>Top Artists</h3>
+          <div class="artist-list">
+            <div class="artist-list__row">
+              <img
+                src="https://assets.codepen.io/3685267/nft-dashboard-pro-1.jpg"
+                alt=""
+              />
+              <div>
+                <h5>Raven Simmons</h5>
+                <span>@raven</span>
+              </div>
+            </div>
+            <div class="artist-list__row">
+              <img
+                src="https://assets.codepen.io/3685267/nft-dashboard-pro-2.jpg"
+                alt=""
+              />
+              <div>
+                <h5>Uriah Gardner</h5>
+                <span>@uriah</span>
+              </div>
+            </div>
+            <div class="artist-list__row">
+              <img
+                src="https://assets.codepen.io/3685267/nft-dashboard-pro-4.jpg"
+                alt=""
+              />
+              <div>
+                <h5>Colin Mitchell</h5>
+                <span>@colin</span>
+              </div>
+            </div>
+            <div class="artist-list__row">
+              <img
+                src="https://assets.codepen.io/3685267/nft-dashboard-pro-3.jpg"
+                alt=""
+              />
+              <div>
+                <h5>Emely Hall</h5>
+                <span>@emely</span>
+              </div>
+            </div>
+            <div class="artist-list__row">
+              <img
+                src="https://assets.codepen.io/3685267/nft-dashboard-pro-5.jpg"
+                alt=""
+              />
+              <div>
+                <h5>Raphael Scott</h5>
+                <span>@raphael</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy-prompt">
+            <h5>Buy a collection with ethereum</h5>
+            <p>
+              you can buy a collection of artwork with ethereum very easy and
+              simple
+            </p>
+            <button>Get Started</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

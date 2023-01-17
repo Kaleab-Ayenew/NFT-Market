@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #bababa;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #1b1b1b;
+  color: #868686;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: white;
+}
+
+h4 {
+  font-size: 1.15rem;
+  color: white;
+}
+
+h5 {
+  font-size: 1rem;
+  color: white;
+}
+
+button {
+  height: 39px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+  transform-center: center center;
+}
+
+button.gradient-btn {
+  background: linear-gradient(to right, #da22ff, #9733ee);
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#root {
+  padding: 10px;
+}
+
+section.side-bar {
+  display: none;
+}
+
+header {
+  background-color: #1b1b1b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.round-border {
+  border-radius: 6px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-right: 15px;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.menu-container img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 20px;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+  padding: 2.5px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list-icon {
+  margin: 15px 0;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #4c4c4c;
+  margin-right: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: #4c4c4c;
+}
+
+.search-box input {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-box i {
+  color: white;
+  margin: 0 10px;
+}
+
+.dashboard p {
+  margin: 10px 0;
+}
+
+.dashboard__header-image {
+  background-image: url(https://cdn.decrypt.co/wp-content/uploads/2021/11/Decrypt-Photo-Format-2-gID_1.png);
+  background-size: cover;
+  background-positon: 50%;
+  height: 150px;
+  padding: 20px;
+}
+
+.dashboard__header-image button {
+  width: 150px;
+  margin: 15px 0;
+}
+
+.choice-list {
+  list-style: none;
+  display: flex;
+  margin: 5px 0;
+}
+
+.choice-list li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.choice-list li:nth-child(1) {
+  text-decoration: underline;
+  color: #da22ff;
+  font-weight: bold;
+}
+
+.trending-list {
+  /*I may put some stuff here*/
+}
+
+.trending-card {
+  /* I may put some stuff here*/
+  overflow: hidden;
+  background-color: rgb(45, 45, 45);
+  margin-bottom: 20px;
+}
+
+.trending-card__image-holder {
+  background-image: url(https://static.theceomagazine.net/wp-content/uploads/2021/08/23121116/NFT-Artists-3300x1479-2-scaled.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.trending-card__glass-board {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 0 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.trending-card__glass-board ul {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.trending-card__seller-info {
+  /*I may put some things here*/
+  padding: 10px;
+}
+
+.trending-card__seller-info h4 {
+  margin: 6px 0;
+}
+
+.trending-card__avatar-holder {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.trending-card__avatar-holder img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.trending-card__btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.trending-card__btn-group button {
+  width: 45%;
+  height: 45px;
+  color: white;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+  overflow: hidden;
+  padding: 2px;
+}
+
+.trending-card__btn-group button:nth-child(2) span {
+  background: rgb(45, 45, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 6px;
+}
+
+section.bottom {
+  /*I may put something here*/
+}
+
+.bottom h3 {
+  margin: 10px 0;
+}
+
+.artist-list {
+  /*I may put something here*/
+}
+
+.artist-list__row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background: rgb(45, 45, 45);
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.artist-list__row img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.buy-prompt {
+  background-image: linear-gradient(to right, #da22ff, #9733ee);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.buy-prompt p {
+  color: #d6d6d6;
+  margin-top: 10px;
+}
+
+.buy-prompt button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 740px) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  section.dashboard {
+    width: 58%;
+  }
+  section.bottom {
+    width: 40%;
+    position: sticky;
+    top: 120px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  section.side-bar {
+    display: block;
+    width: 190px;
+    height: 100vh;
+    position: sticky;
+    top: 120px;
+  }
+  .side-bar .menu-list {
+    border-bottom: 1px solid white;
+  }
+  .side-bar .menu-list .side-bar__menu-row {
+    font-weight: bold;
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .side-bar__menu-row:hover {
+    color: white;
+  }
+  .side-bar__menu-row.active .active-marker {
+    width: 5px;
+    height: 32px;
+    border-radius: 0 5px 5px 0;
+    margin-right: 5px;
+    background: linear-gradient(to right, #da22ff, #9733ee);
+  }
+  .side-bar__menu-row i {
+    background: rgb(45, 45, 45);
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .side-bar__menu-row.active {
+    color: white;
+  }
+  .side-bar__menu-row.active i {
+    background: linear-gradient(to right, #da22ff, #9733ee);
+  }
+  section.dashboard {
+    width: 58%;
+  }
+  section.bottom {
+    width: 20%;
+  }
+  .trending-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .trending-card {
+    width: 49%;
+  }
+  .trending-card__glass-board {
+    width: 90%;
+    padding: 0 5px;
+  }
+  .trending-card__glass-board ul {
+    margin: 12px 0;
+  }
+  .trending-card__avatar-holder {
+    margin: 5px 0;
+  }
+  .trending-card__btn-group {
+    margin: 10px 0;
+  }
+}
