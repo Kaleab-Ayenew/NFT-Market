@@ -72,7 +72,60 @@ button.gradient-btn {
 }
 
 section.side-bar {
-  display: none;
+  /* display: none; */
+  display: block;
+  width: 190px;
+  height: 100vh;
+  min-height: 100vh;
+  position: fixed;
+  top: 120px;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
+  visibility: hidden;
+  background-color: #1b1b1b;
+  z-index: 20;
+}
+
+section.side-bar.expand {
+  /* display: block; */
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.side-bar .menu-list {
+  border-bottom: 1px solid white;
+}
+.side-bar .menu-list .side-bar__menu-row {
+  font-weight: bold;
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+}
+.side-bar__menu-row:hover {
+  color: white;
+}
+.side-bar__menu-row.active .active-marker {
+  width: 5px;
+  height: 32px;
+  border-radius: 0 5px 5px 0;
+  margin-right: 5px;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+}
+.side-bar__menu-row i {
+  background: rgb(45, 45, 45);
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.side-bar__menu-row.active {
+  color: white;
+}
+.side-bar__menu-row.active i {
+  background: linear-gradient(to right, #da22ff, #9733ee);
 }
 
 header {
@@ -179,9 +232,9 @@ header {
 }
 
 .dashboard__header-image {
-  background-image: url(https://cdn.decrypt.co/wp-content/uploads/2021/11/Decrypt-Photo-Format-2-gID_1.png);
+  background-image: url(./static/nft-dashboard-art-6.jpg);
   background-size: cover;
-  background-positon: 50%;
+  /* background-position: 50%; */
   height: 150px;
   padding: 20px;
 }
@@ -220,10 +273,29 @@ header {
 }
 
 .trending-card__image-holder {
-  background-image: url(https://static.theceomagazine.net/wp-content/uploads/2021/08/23121116/NFT-Artists-3300x1479-2-scaled.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+
+.trending-card__image-holder.image-1 {
+  background-image: url(./static/nft-dashboard-art-0.jpg);
+}
+
+.trending-card__image-holder.image-2 {
+  background-image: url(./static/nft-dashboard-art-1.jpg);
+}
+
+.trending-card__image-holder.image-3 {
+  background-image: url(./static/nft-dashboard-art-2.jpg);
+}
+
+.trending-card__image-holder.image-4 {
+  background-image: url(./static/nft-dashboard-art-3.jpg);
+}
+
+.trending-card__image-holder.image-5 {
+  background-image: url(./static/nft-dashboard-art-4.jpg);
 }
 
 .trending-card__glass-board {
@@ -352,15 +424,33 @@ section.bottom {
     position: sticky;
     top: 120px;
   }
+  .menu-list-icon {
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 1020px) {
   section.side-bar {
     display: block;
     width: 190px;
     height: 100vh;
+    min-height: 100vh;
     position: sticky;
     top: 120px;
+    transition: all 0.5s ease, opacity 0.2s ease;
+    overflow-x: hidden;
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    z-index: 0;
   }
+
+  section.side-bar.hide {
+    opacity: 0;
+    transform: translateX(-80px);
+    visibility: hidden;
+    width: 0px;
+  }
+
   .side-bar .menu-list {
     border-bottom: 1px solid white;
   }
@@ -393,6 +483,13 @@ section.bottom {
   }
   .side-bar__menu-row.active i {
     background: linear-gradient(to right, #da22ff, #9733ee);
+  }
+  .search-box {
+    width: 58%;
+    margin-left: 80px;
+  }
+  .header-bottom {
+    justify-content: unset;
   }
   section.dashboard {
     width: 58%;
